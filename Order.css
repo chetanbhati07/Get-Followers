@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #ffffff;
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #eee;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(78, 78, 78);
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: rgb(58, 58, 58);
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+}
+
+a {
+  display: block;
+  text-align: center;
+  background: #2196f3;
+  color: white;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+a:hover {
+  background: #0b7dda;
+}
+
+.Orderfirst{
+  background-image: url("OrderBackground.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* ========================================== */
+/* ONLY FOR MOBILE & TABLETS (Desktop safe)   */
+/* ========================================== */
+@media (max-width: 480px) {
+  /* Mobile me background image horizontal scroll na banaye */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Container ko width fixed 400px se hatakar screen responsive banana */
+  .container {
+    width: 90% !important; /* Screen ke sides me 5% space bachega */
+    max-width: 380px !important;
+    padding: 20px !important; /* Thoda padding mobile me space bachane ke liye */
+    margin: 0 auto !important;
+  }
+
+  /* Font size adjustment mobile ke liye */
+  h1 {
+    font-size: 24px !important;
+  }
+
+  label {
+    font-size: 16px !important;
+  }
+}

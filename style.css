@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.firebox{
+    display: flex;
+}
+.fire{
+    width: 40px;
+    border-radius: 10px;
+   margin-right: 3px;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.top-section{
+  background: linear-gradient(135deg, #1E3A5F, #6A2C70, #C72C5B);
+  color: white;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+   padding: 0 100px;
+   
+}
+.boxes{
+    display: flex;
+}
+
+
+.box1{
+    padding:50px 0;
+    
+}
+.firstH1{
+  font-size: 3.6rem;
+  line-height: 1.2;
+}
+.firstP{
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.box1 button{
+    margin-top: 40px;
+    
+  background: #2f80ed;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  margin-left: 10px;
+transition: background-color 0.9s ease; 
+border: 1px solid white;
+ 
+}
+.box1 button:hover{
+    background-color: gold;
+    transform: scale(1.1) 0.9s ease;
+   
+}
+.box1 button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: larger;
+}
+
+
+
+.firstimageremovebackground {
+  max-width: 30rem;
+  width: 100%;
+  opacity: 0.7;
+  transition: all 0.4s ease;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) rotate(1deg) scale(1);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+
+.firstimageremovebackground:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.section2{
+
+    padding-top: 10px;
+    background-color: #EFF2F7;
+    padding: 200px;
+    
+}
+.secondH1{
+    text-align: center;
+}
+.secondP{
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: large;
+    color: #696969;
+}
+.note{
+    margin-top: 30px;
+}
+.li{
+    padding: 30px;
+    padding-left: 45px;
+    font-size: larger;
+    font-weight: 700;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: red;
+}
+.allproducts{
+   text-align: center;
+   padding-top:20px ;
+   color: rgb(110, 110, 110);
+}
+.high-quality{
+    margin-top: 35px;
+    background-color: #2f80ed;
+    padding: 10px;
+    color: #EFF2F7;
+    border-radius: 20px;
+    text-align: center  ;
+}
+.boxes{
+
+    display: grid;
+        margin-top: 20px;
+    grid-template-columns: repeat(auto-fit,200px);
+    justify-content: center;
+    gap: 25px;
+    padding-bottom:100px;
+    
+}
+
+.box{
+    background-color: #ffffff;
+  max-width: 210px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+   
+  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  border-radius: 15px;
+}
+.box:hover{
+    transform: translateY(-10px);
+    transition: 0.70s;
+}
+.box img{
+    width: 100%;
+    max-width: 200px;
+   border-radius: 10px;
+   max-height: 220px;
+   height: 100%;
+    display: block;
+
+}
+.oldprice{
+    text-decoration: line-through;
+    color: #838383;
+}
+.newprice{
+    color:#3b3b3b;
+}
+.box p{
+    line-height: 2.3;
+    font-size:14px;
+}
+.boxfirstp{
+    color: #4d4d4d;
+}
+.boxsecondp{
+    color: rgb(53, 53, 53);
+    font-weight: 600;
+}
+.box a{
+    text-decoration: none;
+    padding: 10px;
+  background: linear-gradient(90deg, #ff6a5b, #f7a45a);
+    color: white;
+    border-radius: 30px;
+    margin-top: auto;
+    margin : 20px;
+    display: block;
+}
+.whyus{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.whyusP{
+    color: #3b3b3b;
+    line-height: 2.0;
+    margin-bottom: 50px;
+}
+.whyusboxes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.whyusboxes img{
+    max-width: 220px;
+    width: 100%;
+    height: 220px;
+
+  transition: all 0.4s ease;
+  animation: float 6s ease-in-out infinite;
+}
+.whyussecondP{
+    margin-top: 30px;
+    color: #696969;
+    line-height: 1.8;
+}
+.averageH1{
+    text-align: center;
+    color: gold;
+    margin-bottom: 30px;
+    
+}
+.section3{
+    padding: 200px;
+    background: linear-gradient(to bottom, #57788D, #2F4353);
+     padding-bottom: 80px;
+     padding-top: 100px;
+    
+}
+.review{
+    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+}
+.section3box{
+    padding: 50px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 600;
+    background-color: white;
+}
+.section3boxes{
+    display: grid;
+    gap: 50px;
+     grid-template-columns: repeat(2,1fr);
+
+}
+.staff{
+    font-size: small;
+    color: #3b3b3b;
+}
+.section4{
+    padding: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section4 H1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.whygrow{
+    display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+.whygrow H2{
+    margin-bottom: 25px;
+}
+.whygrow p{
+    color: #696969;
+    line-height: 2.0;
+    margin-bottom: 20px;
+    
+ 
+}
+.section5{
+    padding: 200px;
+    padding-top: 100px;
+   color: white;
+   padding-bottom: 0;
+   background: linear-gradient(to bottom, #800080, #D4145A);
+  
+}
+  
+.section5first{
+    border-bottom: 1px solid rgb(198, 198, 198);
+      text-align: center;
+      padding-bottom: 70px;
+}
+.contact{
+    color: black;
+    padding: 15px;
+    background-color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.section5first p{
+    line-height: 3.0;
+}
+.section5second{
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+     border-bottom: 1px solid rgb(224, 90, 90);
+}
+.section5second h1,h3{
+    margin-bottom: 30px;
+}
+.section5second p{
+  
+    line-height: 2.0;
+}
+.spacep{
+      margin-top:50px;
+}
+
+.fire2{
+    width: 40px;
+    border-radius: 10px;
+   margin-right: 3px;
+   height: 40px;
+}
+footer{
+   
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.ContactSection{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+   background: linear-gradient(135deg, #1E3A5F, #6A2C70, #C72C5B);
+}
+.Notice{
+    margin-bottom: 40px;
+  
+}
+ol{
+    padding-left: 60px;
+    list-style-type: decimal;
+    line-height: 1.9;
+    gap: 10px;
+}
+.Contactbox{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.Contact{
+      padding: 50px;
+      color: white;
+}
+.radio-box{
+    display: flex;
+    align-items: center;
+     gap: 8px;
+  margin: 5px 0;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.Issue-box{
+    margin-bottom: 30px;
+}
+.Issue-box h3{
+    margin-bottom: 5px;
+}
+.content1{
+    display: none;
+}
+#order:checked ~ .content1{
+    display: block;
+}
+textarea{
+    width: 100%;
+    height: 150px;   /* height badha de */
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+       margin-bottom: 20px;
+}
+.Ticket{
+    background: linear-gradient(135deg, #2f80ed, #2d9cdb);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+ 
+}
+.freeimagebox{
+   display: flex;
+   justify-content: center;
+
+}
+.freeimagebox img{
+    width: 100px;
+
+}
+
+.Ticket:hover{
+
+   background: gold;
+}
+.Note{
+    margin-top: 40px;
+}
+#timer{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff0000;
+}
+.Limited{
+    width: 150px;
+    margin-bottom: 20px ;
+}
+
+
+
+/* ========================================================== */
+/* CHOTI SCREEN KE LIYE ISOLATED RESPONSIVE RULES              */
+/* (Inka badi screen par koi effect nahi padega)              */
+/* ========================================================== */
+
+/* Mobile me navigation bars aur trigger button ka design setup */
+body {
+    overflow-x: hidden; /* Scroll side-wise na ho */
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    /* Safe dynamic paddings taaki side content cut na ho */
+    .section1 {
+        padding: 40px 20px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .box1 {
+        padding: 20px 0 !important;
+    }
+    .firstH1 {
+        font-size: 2.8rem !important;
+    }
+    .firstimageremovebackground {
+        max-width: 25rem !important;
+        margin-top: 30px !important;
+    }
+    .section2 {
+        padding: 40px 20px !important; /* Puraane 200px padding ko scale down */
+    }
+    .section3 {
+        padding: 40px 20px !important; /* Puraane 200px padding ko scale down */
+    }
+    .section3boxes {
+        grid-template-columns: 1fr !important; /* Single column reviews on small screens */
+        gap: 20px !important;
+    }
+    .section4 {
+        padding: 50px 20px !important; /* 200px padding scale down */
+    }
+    .whygrow {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+    .section5 {
+        padding: 50px 20px !important; /* 200px padding scale down */
+    }
+    .ContactSection {
+        padding: 50px 10px !important;
+    }
+    .Contact {
+        padding: 20px 10px !important;
+    }
+    ol {
+        padding-left: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between !important;
+        padding: 20px !important;
+        position: relative !important;
+    }
+    .menu-toggle {
+        display: block !important; /* Ab hamburger menu trigger open hoga mobile screen par */
+    }
+    nav {
+        display: none; /* Default hidden */
+        flex-direction: column !important;
+        width: 100% !important;
+        position: absolute !important;
+        top: 90px !important;
+        left: 0 !important;
+        background-color: #1E3A5F !important;
+        padding: 20px !important;
+        gap: 20px !important;
+        z-index: 9999 !important;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+    }
+    nav.active {
+        display: flex !important; /* Hamburger click karne par show hoga */
+    }
+    .section5second {
+        flex-direction: column !important;
+        gap: 40px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .whyusboxes {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 40px !important;
+    }
+}
