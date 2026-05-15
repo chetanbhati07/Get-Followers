@@ -499,7 +499,7 @@ body {
 @media (max-width: 1024px) {
     /* Safe dynamic paddings taaki side content cut na ho */
     .section1 {
-        padding: 40px 20px !important;
+        padding: 40px 10px !important;
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
@@ -543,6 +543,7 @@ body {
     ol {
         padding-left: 20px !important;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -580,5 +581,33 @@ body {
         flex-direction: column !important;
         align-items: center !important;
         gap: 40px !important;
+    }
+    .section2{
+        padding: 40px 10px !important;
+    }
+    .boxes{
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr) !important;
+        gap: 10px !important;
+        padding-bottom: 50px !important;
+    }
+    .box{
+        max-width: 100% !important;
+        padding: 5px !important;
+    }
+    .box h3{
+        font-size: 14px !important;
+    }
+    .box p{
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+    }
+    .box img{
+        max-height: 180px !important;
+    }
+    .box a {
+        margin: 10px !important;
+        padding: 8px !important;
+        font-size: 12px !important;
     }
 }
