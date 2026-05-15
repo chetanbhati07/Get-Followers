@@ -43,6 +43,33 @@
         .about h1{
             margin-bottom: 20px
         }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px !important; /* Mobile mein 7rem bohot zyada hai, ise kam kiya */
+                width: 100% !important;
+            }
+
+            .about {
+                padding: 30px 20px !important; /* Mobile mein 100px padding ki jagah 20px-30px kiya */
+                border-radius: 20px !important;
+                line-height: 1.6 !important; /* Choti screen par line height thodi kam */
+                text-align: center; /* Mobile par centered text zyada premium lagta hai */
+            }
+
+            .about h1 {
+                font-size: 28px !important;
+            }
+
+            .about p {
+                font-size: 15px !important;
+                word-wrap: break-word; /* Lambe words screen se bahar na jayein */
+            }
+
+            /* Br tags ko mobile par disable kiya taaki text natural flow kare */
+            br {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
