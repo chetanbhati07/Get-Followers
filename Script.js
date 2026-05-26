@@ -1,53 +1,53 @@
-let totalTime = 3 * 24 * 60 * 60; // 3 days in seconds
+// ⏳ 3 DAYS TIMER
+let totalTime = 3 * 24 * 60 * 60;
 
-let timer = setInterval(function(){
+let timer1 = document.getElementById("timer");
+
+if (timer1) {
+let t1 = setInterval(function () {
 
     let days = Math.floor(totalTime / (24 * 60 * 60));
     let hours = Math.floor((totalTime % (24 * 60 * 60)) / (60 * 60));
     let minutes = Math.floor((totalTime % (60 * 60)) / 60);
     let seconds = totalTime % 60;
 
-    document.getElementById("timer").innerText =
+    timer1.innerHTML =
         days + "d " + hours + "h " + minutes + "m " + seconds + "s";
 
     totalTime--;
 
-    if(totalTime < 0){
-        clearInterval(timer);
-        document.getElementById("timer").innerText = "Time Up!";
+    if (totalTime < 0) {
+        clearInterval(t1);
+        timer1.innerHTML = "Time Up!";
     }
 
 }, 1000);
+}
 
-// 10 minutes ko seconds me convert kiya (10 * 60 = 600 seconds)
+
+// ⏱️ 10 MINUTES TIMER
 let startingMinutes = 10;
 let time = startingMinutes * 60;
 
-const timerEl = document.getElementById('timer2');
+let timer2 = document.getElementById("timer2");
 
-// Har 1 second (1000ms) baad timer ko update karne ke liye interval lagaya
-const countdown = setInterval(updateCountdown, 1000);
+if (timer2) {
+let t2 = setInterval(function () {
 
-function updateCountdown() {
-    // Minutes aur Seconds calculate karein
     let minutes = Math.floor(time / 60);
     let seconds = time % 60;
 
-    // Agar single digit ho (jaise 9, 8, 7...) toh aage '0' add karein (09, 08...)
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-    seconds = seconds < 10 ? '0' + seconds : seconds;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    // HTML ke andar timer display karna
-    timerEl.innerHTML = `${minutes}:${seconds}`;
+    timer2.innerHTML = `${minutes}:${seconds}`;
 
-    // Jab timer 0 ho jaye toh rok do
-    if (time <= 0) {
-        clearInterval(countdown);
-        timerEl.innerHTML = "00:00"; // Timer khatam hone par display
-    } else {
-        time--; // Ek-ek second kam karte raho
+    time--;
+
+    if (time < 0) {
+        clearInterval(t2);
+        timer2.innerHTML = "00:00";
     }
-}
 
-// Pehli baar bina delay ke turant timer show karne ke liye call kiya
-updateCountdown();
+}, 1000);
+}
