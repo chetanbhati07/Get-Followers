@@ -51,3 +51,26 @@ let t2 = setInterval(function () {
 
 }, 1000);
 }
+document.getElementById("orderForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_r9b94pk",
+        "template_84fd4vi",
+        this
+    )
+    .then(function(){
+
+        alert("✅ Order Sent Successfully!");
+
+        document.getElementById("orderForm").reset();
+
+    })
+    .catch(function(error){
+
+        alert(error.text);
+
+    });
+
+});
