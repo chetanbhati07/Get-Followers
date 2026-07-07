@@ -5,32 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Instagram Followers </title>
     <link rel="stylesheet" href="Order.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("qhLj5ftiduGm1oGoh");
+})();
+</script>
 </head>
 <body>
     <section class="Orderfirst">
     <div class="maincontainer">
-           <form action="https://formsubmit.co/naichetand@gmail.com" method="POST">
+         <form id="orderForm">
+        
     <div class="container">
         <div class="containerfirst">
         <h1>Get Instagram Followers !</h1>
         <p>Enter Your Details</p>
         </div>
         <label class="label">Enter Name<br>
-            <input type="text" name="text" required>
+            <input type="text" name="name" required>
         </label><br>
 
 <label class="label">Enter Valid Email<br>
             <input type="email" name="email" required>
         </label><br>
         <label class="label">Enter Instagram Profile/Post/Video Link<br>
-            <input type="url" name="link" placeholder="https://instagram.com/..." required>
+      <input type="url" name="instagram_link" placeholder="https://instagram.com/..." required>
         </label>
         <br>
-        <a href="LoginPage.html" class="place">Place order Now</a>
+        
+        <button type="submit" class="place">Place order Now</button>
+
     </div>
     </form>
     </div> 
 
     </section>
+    <script>
+
+document.getElementById("orderForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_gzz78m8",
+        "template_84fd4vi",
+        this
+    )
+    .then(function(){
+
+        alert("✅ Order Sent Successfully!");
+
+        document.getElementById("orderForm").reset();
+         window.location.href = "LoginPage.html";
+
+    })
+    .catch(function(error){
+
+        alert("❌ Failed : " + JSON.stringify(error));
+
+    });
+
+});
+
+</script>
 </body>
 </html>
